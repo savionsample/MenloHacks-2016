@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="app1" ng-init="person ={fName: 'Sav', lName: 'Sample'}">
+    <head>
+        <title>Telescope</title>
+        <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+        <script language="javascript" src="angular.min.js"></script>
+        <script src="exam.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="/path/to/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/moment.js"></script>
+        <script type="text/javascript" src="js/transition.js"></script>
+        <script type="text/javascript" src="js/collapse.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+
+
+
+    </head>
+
+    <body>
+<!--         <div ng-app="">
+            {{"Hello" + "World"}}
+        </div>
+ --><!--
+        <div ng-controller="ctrl1">
+
+            <span>Values:</span>
+            <input type="text" ng-model="first" />
+            <input type="text" ng-model="second" />
+
+            <button ng-click="updateValue()">Sum</button>
+            <br /><br />
+
+            <p>your first value is {{first}}</p>
+
+            <p> your second value is
+                <span data-ng-bind="second"></span>
+            </p>
+
+            <p>{{person.fName + " " + person.lName}} you entered {{first + " and " + second}}</p>
+
+            <h4 ng-controller="ctrl1">First Random Number : {{randomNum1}}</h4>
+            <h4 ng-controller="ctrl1">Second Random Number : {{randomNum2}}</h4>
+
+            <h4 ng-controller="badCtrl"> I'm feeling {{bad}}</h4>
+        </div>
+ -->
+
+<div class="container">
+    <div class="col-sm-6" style="height:130px;">
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker11'>
+                <input type='text' class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar">
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker11').datetimepicker({
+                daysOfWeekDisabled: [0, 6]
+            });
+        });
+    </script>
+</div>
+
+
+    </body>
+</html>

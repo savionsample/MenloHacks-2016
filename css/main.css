@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.fit { /* set relative picture size */
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+
+.image {
+    position: relative;
+    min-height: 1000px;
+    min-width: 1000px;
+}
+
+h1 {
+   position: absolute;
+   top: 200px;
+   left: 0;
+   width: 100%;
+   color: white;
+   font-size: 50px;
+   text-align: center;
+   font-family: "Lucida Console";
+}
+
+.center {
+    display: block;
+    margin: auto;
+  }
+
+body, html {
+    min-height: 100%;
+}
+
+body {
+}
+
+.top-header {
+    width: 100%;
+    max-width:960px;
+    font:6em "Times";
+    color: #f0f0f0;
+    margin: 40px auto;
+    text-align: center;
+}
+
+
+.otherthing {
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header {
+    background: #0f0f0f;
+}
+
+li {
+    list-style: none;
+    float: none;
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #0f0f0f;
+}
+
+ul {
+    margin-left: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    float: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: gray;
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+
+
+.nav-marker {
+    position: relative;
+    bottom: 70px;
+}
+
+#about {
+    height: auto;
+    padding-top: 20px;
+    text-align: center;
+    background-color: #deeded;
+}
+
+#about p {
+    font-size: 1.5em;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    text-align: left;
+    margin: 16px;
+}
+
+.faq-item h3 {
+    font-family: "Times";
+   font-size: 1.7em;
+    color: ##FEA620;
+}
+
+.section-heading {
+
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#faq {
+    background-image: url(../img/OpenRoads2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .main-background {
+        height: calc(100% - 7em);
+        margin-top: 0;
+    }
+}
+
+.bolding {
+    font-weight: 900;
+
+}
+
+footer
+{
+    background-color : #173042;
+}
