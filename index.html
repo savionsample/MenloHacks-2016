@@ -23,9 +23,19 @@
             $("#btn2").click(function(){
                 var v = $("input").val();
                 $(".row").append('<div class="col-md-12"><div class="project-icon"><p id="schedule">' + v + '</p></div><button class="fill">View More</button></div>');
+
+                /* tweet out the assignment :) */
+                if (v.length < 140)
+                {
+                    var tweet = 'http://twitter.com/home?status=' +encodeURIComponent(v);
+                    window.open(tweet,'_blank');
+                }
             });
         });
     </script>
+
+
+</script>
 
 </head>
 
