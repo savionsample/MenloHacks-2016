@@ -5,107 +5,77 @@
         <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
         <script language="javascript" src="angular.min.js"></script>
         <script src="exam.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
-
-
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/moment.js"></script>
-        <script type="text/javascript" src="js/transition.js"></script>
-        <script type="text/javascript" src="js/collapse.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
-
-
-
+        <script>
+            function OKButtonClicked() {
+                var text = document.getElementById("steam-id").value;
+            }
+        </script>
 
         <script>
+            $(document).ready(function(){
+                $("#btn2").click(function(){
+                    var v = $("input").val();
+                    $(".row").append('<div class="col-md-12"><div class="project-icon"></div><button class="fill">View More</button></div>');
 
-        $(document).ready(function(){
-            $("#btn2").click(function(){
-                $("#test").append(<li>hello</li>);
+                });
             });
-        });
         </script>
 
     </head>
 
 
     <body>
-
-        <div></div>
-
         <header>
 
             <h1>Telescope</h1>
-
 
             <div class="one">
                 <form class="form-inline" onsubmit="return false;">
                     <p>A Peek Into Your Week <i class="fa fa-calendar" aria-hidden="true"></i>                              </p>
                     <input id="steam-id" class="form-control input-lg" type="text" placeholder="enter date here" />
-                    <button class="btn btn-success btn-lg" id="btn2" type="submit">OK</button>
+                    <button class="btn btn-success btn-lg" id="btn2" type="submit" onclick="OKButtonClicked()">OK</button>
                 </form>
 
                 <br /><br /><br /><br />
             </div>
 
-        <div id="about-me">
+        <div id="item">
            <div class="row">
                 <h2>Schedule</h2>
 
-                <div class="col-md-2" id="one">
+                <div class="col-md-12" id="one">
                     <div class="project-icon" id="first"></div>
                     <a href="https://github.com/savionsample/savionsample.github.io"><button class="fill">View More</button></a>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-md-12">
                     <div class="project-icon"></div>
                     <button class="fill">View More</button>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-md-12">
                     <div class="project-icon"></div>
                     <button class="fill">View More</button>
-                </div>
-
-                <div class="col-md-2">
-                    <div class="project-icon"></div>
-                    <button class="fill">View More</button>
-                </div>
-
-                <div class="col-md-2">
-                    <div class="project-icon"></div>
-                    <button class="fill">View More</button>
-                </div>
-
-                <div class="col-md-2">
-                    <h3 class="week">Week 1</h3>
                 </div>
 
             </div>
 
-            <div class="row" id="test">
 
-            </div>
 
         </div>
-
-
-
-
 
     </body>
 
