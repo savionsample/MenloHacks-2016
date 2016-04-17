@@ -28,7 +28,8 @@
             $(document).ready(function(){
                 $("#btn2").click(function(){
                     var v = $("input").val();
-                    $(".row").append('<div class="col-md-12"><div class="project-icon"></div><button class="fill">View More</button></div>');
+                    $(".row").append('<div class="col-md-12"><div class="project-icon"><p>' + v + '</p></div><button class="fill">View More</button></div>');
+                   /* $(".project-icon").html(v);*/
 
                 });
             });
@@ -56,20 +57,7 @@
            <div class="row">
                 <h2>Schedule</h2>
 
-                <div class="col-md-12" id="one">
-                    <div class="project-icon" id="first"></div>
-                    <a href="https://github.com/savionsample/savionsample.github.io"><button class="fill">View More</button></a>
-                </div>
 
-                <div class="col-md-12">
-                    <div class="project-icon"></div>
-                    <button class="fill">View More</button>
-                </div>
-
-                <div class="col-md-12">
-                    <div class="project-icon"></div>
-                    <button class="fill">View More</button>
-                </div>
 
             </div>
 

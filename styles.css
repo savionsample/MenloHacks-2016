@@ -1,3 +1,6 @@
+@import "/path/to/bootstrap/less/variables";
+@import "/path/to/bootstrap-datetimepicker/src/less/bootstrap-datetimepicker-build.less";
+
 body {
     overflow-y: scroll;
     background-color: #6acae2;
@@ -11,13 +14,17 @@ header {
     height: 70%;
 }
 
+#stuff {
+    color: white;
+}
+
 header h1 {
     font-size: 100px;
     color: white;
     font-family: 'Lobster';
 }
 
-p {
+p{
     color: white;
 }
 
@@ -39,6 +46,8 @@ header h1, header form, header .alert, footer {
     text-align: center;
 }
 
+
+
 #buttons {
     margin: 0 auto 30px;
     text-align: center;
@@ -56,6 +65,7 @@ html, body {
     margin: 0em;
     padding: 0em;
     box-sizing: border-box;
+/*    overflow-x: hidden:*/
 }
 
 /* Removes the scroll bar */
@@ -97,6 +107,30 @@ button {
     box-sizing: border-box;
 }
 
+.fill:hover {
+    color: white;
+    box-sizing: border-box;
+}
+
+.fill:before {
+    content: "";
+    position: absolute;
+    background: #383736;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.09s ease-in;
+    box-sizing: border-box;
+}
+
+.fill:hover:before {
+    top: 0;
+    box-sizing: border-box;
+}
+
+
 h1 {
     font-size: 4vw;
     text-align: center;
@@ -106,6 +140,8 @@ h1 {
     vertical-align:
     left: 1em;
 }
+
+
 
 .container {
     text-align: center;
@@ -138,10 +174,28 @@ h3 {
     box-sizing: border-box;
 }
 
+
 #item{
     background-color: #add2d2;
     overflow-x: hidden;
     height: 100%;
+}
+
+a {
+    color: white;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+    float: none;
+    margin-left: 2em;
+    margin-right: 1em;
+    padding-top: 0em;
+    padding-bottom: 1em;
+    text-align: center;
+    color: #0f0f0f;
+    box-sizing: border-box;
 }
 
 .week
@@ -151,6 +205,7 @@ h3 {
     font-weight: 600;
 }
 
+
 .project-icon {
     height: 19em;
     border-radius: 1.7em;
@@ -158,6 +213,13 @@ h3 {
     background-color: gray;
     box-sizing: border-box;
 }
+
+#first {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../img/github.png);
+}
+
+
+
 
 .row {
     width: 100%;
