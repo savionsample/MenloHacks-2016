@@ -1,10 +1,21 @@
-@import "/path/to/bootstrap/less/variables";
-@import "/path/to/bootstrap-datetimepicker/src/less/bootstrap-datetimepicker-build.less";
+/* Removes the scroll bar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    text-align: center;
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+     height: 100%;
+    width: 100%;
+}
 
 body {
+    font-family: 'Lobster', sans-serif;
     overflow-y: scroll;
     background-color: #6acae2;
-    font-family: 'Lobster';
 }
 
 header {
@@ -24,7 +35,7 @@ header h1 {
     font-family: 'Lobster';
 }
 
-p{
+p {
     color: white;
 }
 
@@ -34,43 +45,8 @@ input
     left: 100px;
 }
 
-header h1 small {
-    font-size: 100px;
-}
-
 h1 {
     font-size: 100px;
-}
-
-header h1, header form, header .alert, footer {
-    text-align: center;
-}
-
-
-
-#buttons {
-    margin: 0 auto 30px;
-    text-align: center;
-
-}
-
-#buttons .btn {
-    font-size: 20px;
-}
-
-html, body {
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    margin: 0em;
-    padding: 0em;
-    box-sizing: border-box;
-/*    overflow-x: hidden:*/
-}
-
-/* Removes the scroll bar */
-::-webkit-scrollbar {
-    display: none;
 }
 
 body {
@@ -80,7 +56,6 @@ body {
     box-sizing: border-box;
 }
 
-/* BUTTONS ---  http://codepen.io/davekilljoy/*/
 button {
     position: relative;
     height: 4em;
@@ -130,81 +105,41 @@ button {
     box-sizing: border-box;
 }
 
-
 h1 {
-    font-size: 4vw;
+    box-sizing: border-box;
     text-align: center;
     color: white;
     font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
-    vertical-align:
-    left: 1em;
-}
-
-
-
-.container {
-    text-align: center;
-}
-
-.test {
-        /*font-size: 4em;*/
-    font-size: 4vw;
-    text-align: center;
-    color: black;
-    /*margin-top: 37%;*/
-    font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
 }
 
 h2 {
-    text-align: center;
-    font-weight: 300;
-    font-size: 2.2em;
     box-sizing: border-box;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 300;
 }
 
 h3 {
+    box-sizing: border-box;
     font-size: 1.7em;
     font-weight: 400;
-    text-align: center;
     color: white;
-    margin-top: .3em;
     font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
+    text-align: center;
+    margin-top: .3em;
 }
 
-
-#item{
-    background-color: #add2d2;
+#item {
+    background-color: #9cc9c9;
     overflow-x: hidden;
     height: 100%;
 }
 
-a {
-    color: white;
-    box-sizing: border-box;
-}
-
-li {
-    list-style: none;
-    float: none;
-    margin-left: 2em;
-    margin-right: 1em;
-    padding-top: 0em;
-    padding-bottom: 1em;
-    text-align: center;
-    color: #0f0f0f;
-    box-sizing: border-box;
-}
-
-.week
-{
+.week {
     padding-top: 200px;
     font-size: 60px;
     font-weight: 600;
 }
-
 
 .project-icon {
     height: 19em;
@@ -214,16 +149,14 @@ li {
     box-sizing: border-box;
 }
 
-#first {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../img/github.png);
+.row {
+    box-sizing: border-box;
+    width: 100%;
 }
 
-
-
-
-.row {
-    width: 100%;
-    box-sizing: border-box;
+#schedule {
+    padding-top: 50px;
+    font-size: 50px;
 }
 
 
